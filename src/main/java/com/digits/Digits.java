@@ -36,7 +36,13 @@ public class Digits {
 	// 结果List
 	private static List<String> resultList = new ArrayList<String>();
 
-	// 打印方法
+	/**
+	 * 打印方法
+	 * @author yangd
+	 * @see update_name:yangd update_time:2021-02-25
+	 * @param number 输入的数字
+	 * @return 返回拼好的结果
+	 */
 	public static String printMethod(String number) {
 
 		// 打印输入参数
@@ -70,7 +76,14 @@ public class Digits {
 		return result;
 	}
 
-	// 递归查询
+	/**
+	 * 递归查询
+	 * @author yangd
+	 * @see update_name:yangd update_time:2021-02-25
+	 * @param combination 每个组合
+	 * @param number 输入的数字数组
+	 * @param index 数字下标or对应字母下标
+	 */
 	public static void recursionMethod(String combination, String[] number, int index) {
 		if (index == number.length) {
 			resultList.add(combination);
